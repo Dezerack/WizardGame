@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MovementJoystick : MonoBehaviour
 {
@@ -47,6 +48,7 @@ public class MovementJoystick : MonoBehaviour
                 else if (tag.Contains("NPC"))
                 {
                     Debug.Log("NPC");
+                    SceneManager.LoadScene("TestBattleScene");
                 }
                 else if (tag.Contains("Quit"))
                 {
